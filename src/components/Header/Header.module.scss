@@ -1,0 +1,22 @@
+@import "../../../public/static/styles/Colors";
+
+.root {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  background: $light-gray;
+
+  .hamburger {
+    margin-right: 16px;
+    font-size: 32px;
+    color: $text;
+    cursor: pointer;
+  }
+}

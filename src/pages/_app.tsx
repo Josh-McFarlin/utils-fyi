@@ -3,6 +3,7 @@ import Head from "next/head";
 import { NextPage } from "next";
 import { AppProps } from "next/app";
 import { DefaultSeo } from "next-seo";
+import Header from "../components/Header";
 import "normalize.css";
 import "../../public/static/styles/App.scss";
 
@@ -31,6 +32,7 @@ const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => (
       }}
     />
 
+    <Header />
     <div id="Content">
       <Component {...pageProps} />
     </div>

@@ -14,6 +14,10 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+          />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -32,6 +36,10 @@ class MyDocument extends Document {
             href="/favicon-16x16.png"
           />
           <link rel="manifest" href="/site.webmanifest" />
+          <link
+            href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />

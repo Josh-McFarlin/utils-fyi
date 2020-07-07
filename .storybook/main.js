@@ -17,7 +17,6 @@ module.exports = {
         },
         loaderOptions: {
           prettierConfig: {
-            printWidth: 80,
             singleQuote: false,
           },
         },

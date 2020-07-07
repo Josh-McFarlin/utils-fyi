@@ -15,10 +15,12 @@
     "dev": "next dev -p 3000",
     "build": "next build && next export",
     "type-check": "tsc --pretty --noEmit",
-    "format": "prettier --write **/*.{js,ts,tsx,test.tsx}",
+    "format": "prettier --write **/*.{js,ts,tsx}",
     "lint": "eslint --fix --ext ts --ext tsx --ext js .",
     "test": "jest",
-    "test-all": "npm run lint && npm run type-check && npm run test"
+    "test-all": "npm run lint && npm run type-check && npm run test",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "husky": {
     "hooks": {
@@ -33,6 +35,7 @@
     ]
   },
   "dependencies": {
+    "clsx": "^1.1.1",
     "next": "latest",
     "next-images": "^1.4.0",
     "next-offline": "^5.0.2",
@@ -42,6 +45,18 @@
     "sass": "^1.26.9"
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^5.3.19",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-console": "^1.2.1",
+    "@storybook/addon-docs": "^5.3.19",
+    "@storybook/addon-knobs": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addon-storysource": "^5.3.19",
+    "@storybook/addon-viewport": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/preset-scss": "^1.0.2",
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react": "^5.3.19",
     "@testing-library/react": "^10.0.1",
     "@types/jest": "^25.1.4",
     "@types/node": "^13.9.5",
@@ -50,6 +65,8 @@
     "@typescript-eslint/eslint-plugin": "^2.25.0",
     "@typescript-eslint/parser": "^2.25.0",
     "babel-jest": "^25.2.3",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
@@ -60,6 +77,10 @@
     "lint-staged": "^10.0.10",
     "prettier": "2.0.5",
     "prettier-eslint": "^11.0.0",
+    "react-is": "^16.13.1",
+    "sass-loader": "^9.0.2",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^7.0.5",
     "typescript": "^3.8.3"
   }
 }

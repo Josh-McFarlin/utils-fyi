@@ -22,7 +22,7 @@ const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => (
     <DefaultSeo
       openGraph={{
         type: "website",
-        locale: "en_US",
+        locale: "en",
         url: "https://utils.fyi",
         // eslint-disable-next-line @typescript-eslint/camelcase
         site_name: "utils-fyi",

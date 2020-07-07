@@ -9,6 +9,7 @@ body,
   padding: 0;
   position: relative;
   overscroll-behavior: none;
+  background-color: $background;
 }
 
 body {
@@ -50,6 +51,7 @@ textarea,
 select,
 button {
   margin: 0;
+  color: $text;
 }
 
 h1 {

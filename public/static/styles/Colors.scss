@@ -1,6 +1,21 @@
-$text: #4f4f4f;
-$background: #f2f2f2;
+body, body.light-mode {
+  --main-bg-color: #f2f2f2;
+  --secondary-bg-color: #c4c4c4;
+  --dark-bg-color: #828282;
+  --highlight-color: #333333;
+  --text-color: #4f4f4f;
+}
 
-$light-gray: #c4c4c4;
-$gray: #828282;
-$dark-gray: #333333;
+body.dark-mode {
+  --main-bg-color: #262626;
+  --secondary-bg-color: #575757;
+  --dark-bg-color: #151515;
+  --highlight-color: #a8a8a8;
+  --text-color: #e2e2e2;
+}
+
+$background: var(--main-bg-color);
+$light-gray: var(--secondary-bg-color);
+$gray: var(--dark-bg-color);
+$dark-gray: var(--highlight-color);
+$text: var(--text-color);

@@ -43,7 +43,9 @@
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "sass": "^1.26.9"
+    "sass": "^1.26.9",
+    "use-dark-mode": "^2.3.1",
+    "uuid": "^8.2.0"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^5.3.19",

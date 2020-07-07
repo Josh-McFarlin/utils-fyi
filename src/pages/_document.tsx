@@ -1,5 +1,6 @@
 import * as React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import scriptString from "../utils/darkModeScript";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -42,6 +43,7 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
+          <script dangerouslySetInnerHTML={{ __html: scriptString }} />
           <Main />
           <NextScript />
         </body>

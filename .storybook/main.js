@@ -1,6 +1,6 @@
 module.exports = {
+  stories: ["../src/**/*.stories.tsx"],
   addons: [
-    "@storybook/preset-typescript",
     {
       name: "@storybook/preset-scss",
       options: {
@@ -24,5 +24,11 @@ module.exports = {
       },
     },
     "@storybook/addon-docs",
+    "@storybook/addon-controls",
+    "@storybook/addon-actions",
+    "@storybook/addon-links",
+    "@storybook/addon-viewport",
+    "@storybook/addon-a11y",
+    "storybook-dark-mode",
   ],
 };

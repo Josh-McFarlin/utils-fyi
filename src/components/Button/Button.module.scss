@@ -1,0 +1,56 @@
+@import "../../../public/static/styles/Colors";
+
+.root {
+  max-width: 90%;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  outline: none;
+  resize: none;
+  white-space: pre-wrap;
+  background: $primary-button-color;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $primary-button-color;
+  color: $highlight-text-color;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+
+  &:disabled {
+    cursor: not-allowed;
+    filter: brightness(80%);
+  }
+
+  &:hover {
+    filter: brightness(120%);
+  }
+}
+
+.outlined {
+  background: none !important;
+}
+
+.primaryColor {
+  background: $primary-button-color;
+  border-color: $primary-button-color;
+}
+
+.secondaryColor {
+  background: $secondary-button-color;
+  border-color: $secondary-button-color;
+}
+
+.successColor {
+  background: $success-button-color;
+  border-color: $success-button-color;
+}
+
+.errorColor {
+  background: $error-button-color;
+  border-color: $error-button-color;
+}
+
+.warningColor {
+  background: $warning-button-color;
+  border-color: $warning-button-color;
+}

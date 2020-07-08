@@ -11,12 +11,12 @@
   left: 0;
   box-sizing: border-box;
   padding: 8px 16px;
-  background: $light-gray;
+  background: $secondary-bg-color;
 
   .hamburger {
     margin-right: 16px;
     font-size: 32px;
-    color: $text;
+    color: $primary-text-color;
     cursor: pointer;
   }
 }

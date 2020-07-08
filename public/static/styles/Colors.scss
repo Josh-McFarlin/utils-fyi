@@ -1,21 +1,51 @@
 body.light-mode {
-  --main-bg-color: #f2f2f2;
+  --primary-bg-color: #f2f2f2;
   --secondary-bg-color: #c4c4c4;
   --dark-bg-color: #828282;
-  --highlight-color: #333333;
-  --text-color: #4f4f4f;
+  --highlight-bg-color: #333333;
+
+  --primary-text-color: #2f2f2f;
+  --secondary-text-color: #4f4f4f;
+  --dark-text-color: #131313;
+  --highlight-text-color: #e7e7e7;
+
+  --primary-button-color: #2a8abb;
+  --secondary-button-color: #3c5230;
+  --success-button-color: #41b426;
+  --error-button-color: #a82525;
+  --warning-button-color: #d5af2d;
 }
 
 body.dark-mode {
-  --main-bg-color: #262626;
+  --primary-bg-color: #262626;
   --secondary-bg-color: #575757;
   --dark-bg-color: #151515;
-  --highlight-color: #a8a8a8;
-  --text-color: #e2e2e2;
+  --highlight-bg-color: #a8a8a8;
+
+  --primary-text-color: #e2e2e2;
+  --secondary-text-color: #a5a5a5;
+  --dark-text-color: #131313;
+  --highlight-text-color: #e7e7e7;
+
+  --primary-button-color: #2a8abb;
+  --secondary-button-color: #3c5230;
+  --success-button-color: #41b426;
+  --error-button-color: #a82525;
+  --warning-button-color: #d5af2d;
 }
 
-$background: var(--main-bg-color);
-$light-gray: var(--secondary-bg-color);
-$gray: var(--dark-bg-color);
-$dark-gray: var(--highlight-color);
-$text: var(--text-color);
+$primary-bg-color: var(--primary-bg-color);
+$secondary-bg-color: var(--secondary-bg-color);
+$dark-bg-color: var(--dark-bg-color);
+$highlight-bg-color: var(--highlight-bg-color);
+
+$primary-text-color: var(--primary-text-color);
+$secondary-text-color: var(--secondary-text-color);
+$dark-text-color: var(--dark-text-color);
+$highlight-text-color: var(--highlight-text-color);
+
+$primary-button-color: var(--primary-button-color);
+$secondary-button-color: var(--secondary-button-color);
+$success-button-color: var(--success-button-color);
+$error-button-color: var(--error-button-color);
+$warning-button-color: var(--warning-button-color);

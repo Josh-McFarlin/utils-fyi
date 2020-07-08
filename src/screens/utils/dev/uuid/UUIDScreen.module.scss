@@ -1,4 +1,18 @@
-.tall {
-  width: 2px;
-  height: 200vh;
+.spaceTop {
+  margin-top: 4px;
+}
+
+.spaceBottom {
+  margin-bottom: 32px;
+}
+
+.spaceRight {
+  margin-right: 16px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

@@ -2,7 +2,7 @@ import * as React from "react";
 import clsx from "clsx";
 import classes from "./TextOutput.module.scss";
 
-interface Props extends React.HTMLProps<HTMLInputElement> {
+export interface PropTypes extends React.HTMLProps<HTMLInputElement> {
   className?: string;
   outputClassName?: string;
   label?: string;
@@ -10,7 +10,7 @@ interface Props extends React.HTMLProps<HTMLInputElement> {
 }
 
 /**
- * An input that can be used for any type of data.
+ * A read-only output that shows a single line of text.
  */
 const TextOutput = ({
   className,
@@ -18,7 +18,7 @@ const TextOutput = ({
   label,
   children,
   ...rest
-}: Props) => (
+}: PropTypes) => (
   <label className={clsx(classes.root, className)}>
     {label != null && <p>{label}</p>}
     <input className={outputClassName} value={children} readOnly {...rest} />

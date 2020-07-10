@@ -1,6 +1,6 @@
 import * as React from "react";
 import clsx from "clsx";
-import uuidv4 from "uuid/v4";
+import { v4 as uuidv4 } from "uuid";
 import { saveAs } from "file-saver";
 import Button from "../../../../components/Button";
 import FormInput from "../../../../components/FormInput";

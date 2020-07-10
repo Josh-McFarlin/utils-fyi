@@ -2,7 +2,7 @@ import * as React from "react";
 import clsx from "clsx";
 import classes from "./FormInput.module.scss";
 
-interface Props extends React.HTMLProps<HTMLInputElement> {
+export interface PropTypes extends React.HTMLProps<HTMLInputElement> {
   className?: string;
   inputClassName?: string;
   disabled?: boolean;
@@ -24,7 +24,7 @@ const FormInput = ({
   placeHolder,
   onChange,
   ...rest
-}: Props) => (
+}: PropTypes) => (
   <label className={clsx(classes.root, className)}>
     {label != null && <p>{label}</p>}
     <input

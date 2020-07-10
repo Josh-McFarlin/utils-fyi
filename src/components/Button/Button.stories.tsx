@@ -1,5 +1,5 @@
 import * as React from "react";
-import Button from "./Button";
+import Button, { PropTypes } from "./Button";
 
 export default {
   title: "Button",
@@ -16,7 +16,7 @@ export default {
   },
 };
 
-export const Component = (args) => <Button {...args} />;
+export const Component = (args: PropTypes) => <Button {...args} />;
 Component.args = {
   children: "Button",
 };
@@ -31,13 +31,13 @@ export const Variants = () => (
   </>
 );
 
-export const Disabled = Component.bind({});
+export const Disabled = (args: PropTypes) => <Button {...args} />;
 Disabled.args = {
   children: "Button",
   disabled: true,
 };
 
-export const Outlined = Component.bind({});
+export const Outlined = (args: PropTypes) => <Button {...args} />;
 Outlined.args = {
   children: "Button",
   shape: "outlined",

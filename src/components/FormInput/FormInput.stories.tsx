@@ -1,12 +1,12 @@
 import * as React from "react";
-import FormInput from "./FormInput";
+import FormInput, { PropTypes } from "./FormInput";
 
 export default {
   title: "FormInput",
   component: FormInput,
 };
 
-export const Component = (args) => {
+export const Component = (args: PropTypes) => {
   const [value, setValue] = React.useState("This is a FormInput!");
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) =>
@@ -15,7 +15,7 @@ export const Component = (args) => {
   return <FormInput {...args} value={value} onChange={handleChange} />;
 };
 
-export const WithLabel = (args) => {
+export const WithLabel = (args: PropTypes) => {
   const [value, setValue] = React.useState("");
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) =>
@@ -26,7 +26,7 @@ export const WithLabel = (args) => {
 
 WithLabel.args = { label: "Label" };
 
-export const WithPlaceholder = (args) => {
+export const WithPlaceholder = (args: PropTypes) => {
   const [value, setValue] = React.useState("");
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) =>
@@ -37,7 +37,7 @@ export const WithPlaceholder = (args) => {
 
 WithPlaceholder.args = { placeHolder: "Placeholder" };
 
-export const WithEmoji = (args) => {
+export const WithEmoji = (args: PropTypes) => {
   const [value, setValue] = React.useState("Josh 😎");
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) =>

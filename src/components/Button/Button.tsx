@@ -2,7 +2,8 @@ import * as React from "react";
 import clsx from "clsx";
 import classes from "./Button.module.scss";
 
-interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface PropTypes
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
   variant?: "primary" | "secondary" | "success" | "error" | "warning";
   shape?: "filled" | "outlined";
@@ -19,7 +20,7 @@ const Button = ({
   shape = "filled",
   disabled = false,
   ...rest
-}: Props) => (
+}: PropTypes) => (
   <button
     className={clsx(
       classes.root,

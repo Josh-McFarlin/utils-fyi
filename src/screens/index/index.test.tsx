@@ -1,6 +1,6 @@
 import React from "react";
-import { render } from "../testUtils";
-import HomePage from "../../src/pages/index";
+import { render } from "../../../test/testUtils";
+import HomePage from "../../pages";
 
 describe("Home Page", () => {
   it("matches snapshot", () => {

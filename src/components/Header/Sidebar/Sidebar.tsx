@@ -4,7 +4,12 @@ import Link from "next/link";
 import routes from "../../../utils/routes";
 import classes from "./Sidebar.module.scss";
 
-const Sidebar = ({ open, handleClose }) => (
+interface Props {
+  open: boolean;
+  handleClose: () => void;
+}
+
+const Sidebar = ({ open, handleClose }: Props) => (
   <div
     className={clsx(classes.root, !open && classes.hidden)}
     role="button"

@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UUID Page matches snapshot 1`] = `
+<DocumentFragment>
+  <h1>
+    UUID v4
+  </h1>
+  <div
+    class="row spaceBottom"
+  >
+    <h2
+      class="spaceRight"
+    >
+      UUID: 00000000-0000-0000-0000-000000000000
+    </h2>
+    <button
+      class="root primaryColor"
+      type="button"
+    >
+      Generate New
+    </button>
+  </div>
+  <h3>
+    Generate List
+  </h3>
+  <div
+    class="row spaceBottom"
+  >
+    <label
+      class="root spaceRight"
+    >
+      <p>
+        Count
+      </p>
+      <input
+        max="500"
+        min="1"
+        type="number"
+        value="5"
+      />
+    </label>
+    <button
+      class="root primaryColor"
+      type="button"
+    >
+      Generate List
+    </button>
+  </div>
+</DocumentFragment>
+`;

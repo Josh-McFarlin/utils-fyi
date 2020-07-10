@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormInput Component matches snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="root"
+  >
+    <input
+      value="This is a FormInput!"
+    />
+  </label>
+</DocumentFragment>
+`;

@@ -7,7 +7,7 @@ export default {
 };
 
 export const Component = (args) => {
-  const [value, setValue] = React.useState("");
+  const [value, setValue] = React.useState("This is a FormInput!");
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) =>
     setValue(event.target.value);

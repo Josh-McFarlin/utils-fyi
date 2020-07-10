@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="root hidden"
+    role="button"
+    tabindex="0"
+  >
+    <div
+      class="sidebar"
+      role="button"
+      tabindex="0"
+    >
+      <h1
+        class="logo"
+      >
+        utils-fyi
+      </h1>
+      <button
+        class="route"
+        tabindex="0"
+      >
+        Home
+      </button>
+      <button
+        class="route"
+        tabindex="0"
+      >
+        UUID Generator
+      </button>
+    </div>
+  </div>
+  <div
+    class="root"
+  >
+    <button
+      class="hamburger"
+    >
+      =
+    </button>
+    <h1>
+      utils-fyi
+    </h1>
+  </div>
+</DocumentFragment>
+`;

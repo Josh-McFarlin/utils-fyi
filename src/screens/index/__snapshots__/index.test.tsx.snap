@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Page matches snapshot 1`] = `
+<DocumentFragment>
+  <h1
+    class="centerText"
+  >
+    Online tools to help you do anything!
+  </h1>
+  <h3
+    class="centerText"
+  >
+    More tools are being added every day
+  </h3>
+</DocumentFragment>
+`;

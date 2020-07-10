@@ -19,9 +19,13 @@ export default {
 };
 
 export const Component = (args) => (
-  <MultilineTextOutput {...args} value={lorem.generateParagraphs(3)} />
+  <MultilineTextOutput {...args}>
+    {lorem.generateParagraphs(3)}
+  </MultilineTextOutput>
 );
 
 export const LongText = (args) => (
-  <MultilineTextOutput {...args} value={lorem.generateParagraphs(12)} />
+  <MultilineTextOutput {...args}>
+    {lorem.generateParagraphs(12)}
+  </MultilineTextOutput>
 );

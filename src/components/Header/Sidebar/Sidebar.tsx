@@ -22,7 +22,7 @@ const Sidebar = ({ open, handleClose }) => (
       <h1 className={classes.logo}>utils-fyi</h1>
       {routes.map((route) => (
         <Link key={route.link} href={route.link} prefetch={false}>
-          <button className={classes.route} onClick={handleClose}>
+          <button className={classes.route} onClick={handleClose} tabIndex={0}>
             {route.title}
           </button>
         </Link>

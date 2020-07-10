@@ -37,7 +37,7 @@ const UUIDScreen = () => {
     <>
       <h1>UUID v4</h1>
       <div className={clsx(classes.row, classes.spaceBottom)}>
-        <h4 className={classes.spaceRight}>UUID: {uuid}</h4>
+        <h2 className={classes.spaceRight}>UUID: {uuid}</h2>
         <Button onClick={() => setUUID(createUUID)}>Generate New</Button>
       </div>
 

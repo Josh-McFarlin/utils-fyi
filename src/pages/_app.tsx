@@ -4,6 +4,7 @@ import { NextPage } from "next";
 import { AppProps } from "next/app";
 import { DefaultSeo } from "next-seo";
 import Header from "../components/Header";
+import "focus-visible/dist/focus-visible.min.js";
 import "normalize.css";
 import "../../public/static/styles/App.scss";
 

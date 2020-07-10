@@ -75,3 +75,7 @@ div {
 a, button {
   cursor: pointer;
 }
+
+*:focus:not(.focus-visible) {
+  outline: none;
+}

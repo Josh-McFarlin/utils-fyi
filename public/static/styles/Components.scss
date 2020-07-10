@@ -4,7 +4,12 @@ a {
   color: $primary-text-color;
 }
 
-div {
+div,
+label,
+input,
+textarea,
+select,
+button {
   box-sizing: border-box;
 }
 

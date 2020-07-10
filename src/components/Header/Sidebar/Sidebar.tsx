@@ -7,18 +7,24 @@ import classes from "./Sidebar.module.scss";
 const Sidebar = ({ open, handleClose }) => (
   <div
     className={clsx(classes.root, !open && classes.hidden)}
+    role="button"
+    tabIndex={0}
     onClick={handleClose}
+    onKeyPress={(event) => event.stopPropagation()}
   >
     <div
       className={classes.sidebar}
+      role="button"
+      tabIndex={0}
       onClick={(event) => event.stopPropagation()}
+      onKeyPress={(event) => event.stopPropagation()}
     >
       <h1 className={classes.logo}>utils-fyi</h1>
       {routes.map((route) => (
         <Link key={route.link} href={route.link} prefetch={false}>
-          <a className={classes.route} onClick={handleClose}>
+          <button className={classes.route} onClick={handleClose}>
             {route.title}
-          </a>
+          </button>
         </Link>
       ))}
     </div>

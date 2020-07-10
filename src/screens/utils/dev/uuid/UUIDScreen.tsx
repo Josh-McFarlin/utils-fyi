@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 import { saveAs } from "file-saver";
 import Button from "../../../../components/Button";
 import FormInput from "../../../../components/FormInput";
-import MultilineText from "../../../../components/MultilineText";
+import MultilineTextOutput from "../../../../components/MultilineTextOutput";
 import classes from "./UUIDScreen.module.scss";
 
 const UUIDScreen = () => {
@@ -56,7 +56,7 @@ const UUIDScreen = () => {
       </div>
       {showList && (
         <>
-          <MultilineText value={uuidListText} />
+          <MultilineTextOutput value={uuidListText} />
           <div className={clsx(classes.row, classes.spaceTop)}>
             <Button className={classes.spaceRight} onClick={handleDownload}>
               Download List

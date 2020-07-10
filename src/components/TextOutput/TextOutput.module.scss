@@ -13,9 +13,8 @@
   padding: 8px;
 
   p {
-    margin-right: 8px;
+    margin-right: 16px;
     color: inherit;
-    font-size: 16px;
   }
 
   input {
@@ -27,11 +26,6 @@
     outline: none;
     border: none;
     color: inherit;
-    font-size: 16px;
-
-    &:not(:only-child) {
-      border-left: 1px solid $light-text-color;
-      padding-left: 8px;
-    }
+    text-align: right;
   }
 }

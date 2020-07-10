@@ -11,6 +11,10 @@ const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => (
   <>
     <Head>
       <title>utils-fyi</title>
+      <meta
+        name="Description"
+        content="Online tools to help you do anything!"
+      />
     </Head>
     <DefaultSeo
       openGraph={{
@@ -20,7 +24,7 @@ const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => (
         // eslint-disable-next-line @typescript-eslint/camelcase
         site_name: "utils-fyi",
         title: "utils-fyi",
-        description: "Tools for everyone!",
+        description: "Online tools to help you do anything!",
         images: [
           {
             url: "https://utils.fyi/android-chrome-512x512.png",

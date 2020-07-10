@@ -1,48 +1,48 @@
-body.light-mode {
+body.light-mode, .storybookThemeWrapper.lightMode {
   --primary-bg-color: #f2f2f2;
-  --secondary-bg-color: #c4c4c4;
-  --dark-bg-color: #828282;
-  --highlight-bg-color: #333333;
+  --secondary-bg-color: #8a8fa0;
+  --light-bg-color: #8c8d99;
+  --dark-bg-color: #303d51;
 
   --primary-text-color: #2f2f2f;
   --secondary-text-color: #4f4f4f;
+  --light-text-color: #e7e7e7;
   --dark-text-color: #131313;
-  --highlight-text-color: #e7e7e7;
 
-  --primary-button-color: #2a8abb;
-  --secondary-button-color: #3c5230;
-  --success-button-color: #41b426;
-  --error-button-color: #a82525;
-  --warning-button-color: #d5af2d;
+  --primary-button-color: #007bff;
+  --secondary-button-color: #6c757d;
+  --success-button-color: #28a745;
+  --error-button-color: #dc3545;
+  --warning-button-color: #ffc107;
 }
 
-body.dark-mode {
+body.dark-mode, .storybookThemeWrapper.darkMode {
   --primary-bg-color: #262626;
-  --secondary-bg-color: #575757;
+  --secondary-bg-color: #303d51;
+  --light-bg-color: #a8a8a8;
   --dark-bg-color: #151515;
-  --highlight-bg-color: #a8a8a8;
 
-  --primary-text-color: #e2e2e2;
-  --secondary-text-color: #a5a5a5;
-  --dark-text-color: #131313;
-  --highlight-text-color: #e7e7e7;
+  --primary-text-color: #eaeaea;
+  --secondary-text-color: #4f4f4f;
+  --light-text-color: #131313;
+  --dark-text-color: #e7e7e7;
 
-  --primary-button-color: #2a8abb;
-  --secondary-button-color: #3c5230;
-  --success-button-color: #41b426;
-  --error-button-color: #a82525;
-  --warning-button-color: #d5af2d;
+  --primary-button-color: #007bff;
+  --secondary-button-color: #6c757d;
+  --success-button-color: #28a745;
+  --error-button-color: #dc3545;
+  --warning-button-color: #ffc107;
 }
 
 $primary-bg-color: var(--primary-bg-color);
 $secondary-bg-color: var(--secondary-bg-color);
+$light-bg-color: var(--light-bg-color);
 $dark-bg-color: var(--dark-bg-color);
-$highlight-bg-color: var(--highlight-bg-color);
 
 $primary-text-color: var(--primary-text-color);
 $secondary-text-color: var(--secondary-text-color);
+$light-text-color: var(--light-text-color);
 $dark-text-color: var(--dark-text-color);
-$highlight-text-color: var(--highlight-text-color);
 
 $primary-button-color: var(--primary-button-color);
 $secondary-button-color: var(--secondary-button-color);

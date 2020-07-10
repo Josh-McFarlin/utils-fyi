@@ -1,6 +1,7 @@
+@import "../../../public/static/styles/Colors";
+
 .root {
   width: 100%;
-  color: #333333;
   box-sizing: border-box;
   padding: 8px;
   outline: none;
@@ -8,4 +9,6 @@
   white-space: pre-wrap;
   background: white;
   border: 2px solid black;
+  background: $light-bg-color;
+  color: $light-text-color;
 }

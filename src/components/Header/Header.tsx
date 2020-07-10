@@ -11,9 +11,9 @@ const Header = () => {
     <>
       <Sidebar handleClose={toggleSidebar} open={showSidebar} />
       <div className={classes.root}>
-        <div className={classes.hamburger} onClick={toggleSidebar}>
+        <button className={classes.hamburger} onClick={toggleSidebar}>
           =
-        </div>
+        </button>
         <h1>utils-fyi</h1>
       </div>
     </>

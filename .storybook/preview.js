@@ -1,9 +1,11 @@
 import React from "react";
+import clsx from "clsx";
 import addons from "@storybook/addons";
 import { addParameters, addDecorator } from "@storybook/react";
 import "@storybook/addon-console";
+import "normalize.css";
 import "../public/static/styles/Components.scss";
-import "../public/static/styles/Colors.scss";
+import classes from "../public/static/styles/Colors.scss";
 
 addParameters({
   options: {
@@ -50,7 +52,13 @@ const ThemeWrapper = (props) => {
   }, []);
 
   return (
-    <div id="storybook-wrapper" className={isDark ? "dark-mode" : "light-mode"}>
+    <div
+      id="storybookThemeWrapper"
+      className={clsx(
+        classes.storybookThemeWrapper,
+        isDark ? classes.darkMode : classes.lightMode
+      )}
+    >
       {props.children}
     </div>
   );

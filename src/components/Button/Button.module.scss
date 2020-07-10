@@ -8,26 +8,32 @@
   resize: none;
   white-space: pre-wrap;
   background: $primary-button-color;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
   border-color: $primary-button-color;
-  color: $highlight-text-color;
+  color: $light-text-color;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 14px;
+  transition: filter .25s ease-in-out;
 
   &:disabled {
     cursor: not-allowed;
     filter: brightness(80%);
   }
 
-  &:hover {
+  &:hover:not(:disabled) {
     filter: brightness(120%);
   }
 }
 
 .outlined {
-  background: none !important;
+  color: $dark-text-color !important;
+  transition: background .25s ease-in-out;
+
+  &:not(:hover) {
+    background: none !important;
+  }
 }
 
 .primaryColor {
